@@ -1,5 +1,5 @@
 
-# 复现论文：Multiple stressors alter greenhouse gas concentrations in streams
+# Multiple stressors alter greenhouse gas concentrations in streams
 
 这是一个复现论文《Multiple stressors alter greenhouse gas concentrations in streams》（Gutiérrez-Cánovas 等，2024）中所有图表的Python代码库。
 
