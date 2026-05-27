@@ -84,6 +84,16 @@ python plot_01_rel_k600_ER.py
 
 </div>
 
+<div align="center">
+
+| 原图2 | 复现图2 |
+|:---:|:---:|
+| <img width="450" src="https://github.com/user-attachments/assets/ea853f63-51b7-48a7-8782-504da1516e09" alt="原图4"> | <img width="450" src="https://github.com/user-attachments/assets/28238891-c86f-42fd-9102-92d56c474207" alt="复现图4"> |
+| **原图2** | **复现图2** |
+
+</div>
+
+
 ## 数据说明
 
 原始数据集包含50个站点的观测数据，主要变量包括：
