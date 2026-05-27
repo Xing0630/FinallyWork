@@ -73,34 +73,38 @@ python plot_01_rel_k600_ER.py
 7. **Figure 7**：SEM标准化总效应图
 8. **Figure 8**：不同DO赤字水平下的场景分析图
 
-## 复现对比
+## 复现对比图
 
 <div align="center">
 
+| 原图1 | 复现图1 |
 |:---:|:---:|
 | <img width="400" src="https://github.com/user-attachments/assets/ecc6aad9-267c-427e-9189-608013b9210e" alt="原图1"> | <img width="400" src="https://github.com/user-attachments/assets/772c8cab-365a-4e89-8834-c1ad95e739e6" alt="复现图1"> |
 | **原图1** | **复现图1** |
 
 </div>
 
-<div align="center">
-
-|:---:|:---:|:---:|
-| <img width="300" src="https://github.com/user-attachments/assets/c0efde88-a642-4615-9381-f89ed2c6effc" alt="原图3"> | <img width="300" src="https://github.com/user-attachments/assets/0035d051-ffa5-423a-b09c-e5192238b829" alt="复现图3-1"> | <img width="300" src="https://github.com/user-attachments/assets/606d5d07-69d8-4cf3-9ae0-c1a4e0de6f34" alt="复现图3-2"> |
-| **原图2** | **复现图2-1（温室气体系数）** | **复现图2-2（方差分解）** |
-
-</div>
+<br>
 
 <div align="center">
 
+| 原图2 | 复现图2-1（代谢系数） | 复现图2-2（方差分解） |
 |:---:|:---:|:---:|
 | <img width="300" src="https://github.com/user-attachments/assets/8a62b841-d743-4d2a-986b-9f88480599f1" alt="原图2"> | <img width="300" src="https://github.com/user-attachments/assets/73207f70-37f4-4fdd-8809-085579d81dbe" alt="复现图2-1"> | <img width="300" src="https://github.com/user-attachments/assets/81f61071-2577-47d4-b6cb-e075ad19a5b4" alt="复现图2-2"> |
-| **原图3** | **复现图3-1（代谢系数）** | **复现图3-2（方差分解）** |
+| **原图2** | **复现图2-1** | **复现图2-2** |
 
 </div>
 
+<br>
 
+<div align="center">
 
+| 原图3 | 复现图3-1（温室气体系数） | 复现图3-2（方差分解） |
+|:---:|:---:|:---:|
+| <img width="300" src="https://github.com/user-attachments/assets/c0efde88-a642-4615-9381-f89ed2c6effc" alt="原图3"> | <img width="300" src="https://github.com/user-attachments/assets/0035d051-ffa5-423a-b09c-e5192238b829" alt="复现图3-1"> | <img width="300" src="https://github.com/user-attachments/assets/606d5d07-69d8-4cf3-9ae0-c1a4e0de6f34" alt="复现图3-2"> |
+| **原图3** | **复现图3-1** | **复现图3-2** |
+
+</div>
 ## 数据说明
 
 原始数据集包含50个站点的观测数据，主要变量包括：
