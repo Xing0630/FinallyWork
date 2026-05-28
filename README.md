@@ -1,5 +1,4 @@
 
-# Multiple stressors alter greenhouse gas concentrations in streams
 
 这是一个复现论文《Multiple stressors alter greenhouse gas concentrations in streams》（Gutiérrez-Cánovas 等，2024）中所有图表的Python代码库。
 
@@ -59,21 +58,6 @@ python plot_01_rel_k600_ER.py
 
 ## 图表说明
 
-### 探索性分析图表
-1. **Figure 1**：K600（气体交换速率）与ER（生态系统呼吸）的关系图
-2. **Figure 2**：代谢率和温室气体浓度的分布直方图
-3. **Figure 3**：代谢率、DO赤字与GHG通量的关系散点图
-
-### 多模型推断图表
-4. **Figure 4**：代谢指标（GPP、ER、NEP、Algal production）的模型系数图
-5. **Figure 5**：温室气体指标（pCO2、pCH4）的模型系数图
-6. **Figure 6**：各变量的方差分解图
-
-### 结构方程模型与场景分析
-7. **Figure 7**：SEM标准化总效应图
-8. **Figure 8**：不同DO赤字水平下的场景分析图
-
-## 复现对比图
 
 <div align="center">
 
@@ -105,6 +89,7 @@ python plot_01_rel_k600_ER.py
 | **原图3** | **复现图3-1** | **复现图3-2** |
 
 </div>
+
 ## 数据说明
 
 原始数据集包含50个站点的观测数据，主要变量包括：
