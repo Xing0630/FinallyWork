@@ -53,7 +53,6 @@ FinallyWork/
 │     ├─ Figure4.R           # 站点与温度效应分析图生成脚本
 │     ├─ Figure5.R           # 溶解氧与饱和度堆叠面积图生成脚本（模拟数据）
 │     ├─ Figure6.R           # 局部与全局效应值分析图生成脚本
-│     └─ run_all.R           # 一键批量运行所有图表的主脚本
 ├─ data/
 │  ├─ original_data/         # 原始数据集（仅作参考）
 │  └─ SWB_data/              # 本项目使用的完整数据集
@@ -84,27 +83,7 @@ setwd("D:/DATA/FinallyWork")
 结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
 
 ## 复现对比图
-
-<div align="center">
-### 复现图1（图2：相关性与回归分析拼图）
-<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_01.jpg" alt="复现图1">
-<br><br>
-
-### 复现图2（图3：回归系数与解释方差拼图）
-<img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_02.jpg" alt="复现图2">
-<br><br>
-
-### 复现图3（图4：站点与温度效应拼图）
-<img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_03.jpg" alt="复现图3">
-<br><br>
-
-### 复现图4（图5：溶解氧与饱和度分析拼图）
-<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_04.jpg" alt="复现图4">
-<br><br>
-
-### 复现图5（图6：局部与全局效应值拼图）
-<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_05.jpg" alt="复现图5">
-</div>
+在SWB_collage_figures中
 ---
 
 ## 📦 项目依赖包说明
