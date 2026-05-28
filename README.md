@@ -83,7 +83,6 @@ setwd("D:/DATA/FinallyWork")
 数据修复：Figure5 采用模拟数据重构，彻底解决原始数据集列名缺失、读取报错问题
 结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
 ## 📊 原图 ↔ 复现图 对照展示
-
 | 图号与主题 | 论文原文图片 | 本项目 R 语言复现图片 |
 | :---: | :---: | :---: |
 | 图 2 相关性与回归分析 | ![论文原图](original_figures/fig2.jpg) | ![R复现图](SWB_collage_figures/collage_01.jpg) |
@@ -91,9 +90,7 @@ setwd("D:/DATA/FinallyWork")
 | 图 4 站点与温度效应 | ![论文原图](original_figures/fig4.jpg) | ![R复现图](SWB_collage_figures/collage_03.jpg) |
 | 图 5 溶解氧与饱和度分析 | ![论文原图](original_figures/fig5.jpg) | ![R复现图](SWB_collage_figures/collage_04.jpg) |
 | 图 6 局部与全局效应值 | ![论文原图](original_figures/fig6.jpg) | ![R复现图](SWB_collage_figures/collage_05.jpg) |
-
 ---
-
 ## 📦 项目依赖包说明
 | 包名 | 用途 |
 |------|------|
