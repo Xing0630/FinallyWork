@@ -4,8 +4,8 @@
 ---
 
 ## 🔎 复现论文信息
-**论文题目**：Multiple stressors alter greenhouse gas concentrations in streams  
-**发表信息**：Gutiérrez-Cánovas 等，2024，*Global Change Biology*
+- **论文题目**：Multiple stressors alter greenhouse gas concentrations in streams  
+- **发表信息**：Gutiérrez-Cánovas 等，2024，*Global Change Biology*
 
 ---
 
@@ -53,10 +53,72 @@ FinallyWork/
 │     ├─ Figure4.R           # 站点与温度效应分析图生成脚本
 │     ├─ Figure5.R           # 溶解氧与饱和度堆叠面积图生成脚本（模拟数据）
 │     ├─ Figure6.R           # 局部与全局效应值分析图生成脚本
+│     └─ run_all.R           # 一键批量运行所有图表的主脚本
 ├─ data/
 │  ├─ original_data/         # 原始数据集（仅作参考）
 │  └─ SWB_data/              # 本项目使用的完整数据集
 ├─ output/                   # 自动生成的图表文件存放目录
 ├─ reproduced_figures/       # 原作者Python复现8张图表（仅作对比参考）
+├─ original_figures/         # 论文原文图表（用于对照）
 ├─ report.qmd                # 自动生成分析报告的R Markdown文档
 └─ README.md                 # 项目说明文档（本文档）
+🛠️ 运行方法
+1. 环境准备
+安装 R 与 RStudio，并安装所需依赖包：
+r
+运行
+install.packages(c("tidyverse", "patchwork", "cowplot"))
+2. 运行配置
+将 RStudio 工作目录设置为项目根目录：
+r
+运行
+setwd("D:/DATA/FinallyWork")
+无需修改内部路径，所有代码已适配固定目录结构。
+3. 一键批量运行（推荐）
+打开 scripts/SWB_r_scripts/run_all.R 脚本，点击 RStudio 中的 Source 按钮（或按 Ctrl+Shift+S），所有图表会自动生成到 output/ 文件夹，同时复制到 SWB_collage_figures/ 用于展示。
+4. 单图独立运行
+直接打开对应图表的脚本文件（如 Figure2.R），点击 Source 即可单独生成该图。
+💡 项目优化说明
+结构优化：将原论文 8 张子图内容，合理整合为 5 张高清拼图，逻辑更集中、展示更清晰
+数据修复：Figure5 采用模拟数据重构，彻底解决原始数据集列名缺失、读取报错问题
+结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
+📊 原图 ↔ 复现图 对照展示
+表格
+图号与主题	论文原文图片	本项目 R 语言复现图片
+图 2 相关性与回归分析	
+
+
+
+
+图 3 回归系数与解释方差	
+
+
+
+
+图 4 站点与温度效应	
+
+
+
+
+图 5 溶解氧与饱和度分析	
+
+
+
+
+图 6 局部与全局效应值	
+
+
+
+
+📦 项目依赖包说明
+表格
+包名	用途
+tidyverse	数据清洗与可视化（dplyr, ggplot2 等）
+patchwork	多子图拼图、整体排版布局，实现复杂图表组合
+cowplot	图表主题美化、坐标轴与边框优化，提升学术图表质感
+📄 报告生成方式
+打开项目内 report.qmd 文件，在 RStudio 中点击 Knit 按钮（或按 Ctrl+Shift+K），一键生成完整 HTML 分析报告，自动嵌入全部复现图表与分析说明。
+📝 版本信息
+复现版本：v1.0.0（2026-05-27）
+论文版本：Gutiérrez-Cánovas et al., 2024, Global Change Biology
+技术栈：R 4.3.3, tidyverse 2.0.0, patchwork 1.2.0, cowplot 1.1.3
