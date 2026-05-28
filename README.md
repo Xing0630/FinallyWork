@@ -88,7 +88,7 @@ setwd("D:/DATA/FinallyWork")
 
 <div align="center">
 
-| 原图1 | 复现图1 |
+| 原图 | 复现图 |
 |:---:|:---:|
 | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig2.jpg" alt="原图1"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_01.jpg" alt="复现图1"> |
 | **图2 相关性与回归分析** | **复现图1** |
@@ -99,7 +99,7 @@ setwd("D:/DATA/FinallyWork")
 
 <div align="center">
 
-| 原图2 | 复现图2 |
+| 原图 | 复现图 |
 |:---:|:---:|
 | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig3.jpg" alt="原图2"> | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_02.jpg" alt="复现图2"> |
 | **图3 回归系数与解释方差** | **复现图2** |
@@ -110,7 +110,7 @@ setwd("D:/DATA/FinallyWork")
 
 <div align="center">
 
-| 原图3 | 复现图3 |
+| 原图 | 复现图 |
 |:---:|:---:|
 | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig4.jpg" alt="原图3"> | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_03.jpg" alt="复现图3"> |
 | **图4 站点与温度效应** | **复现图3** |
@@ -121,7 +121,7 @@ setwd("D:/DATA/FinallyWork")
 
 <div align="center">
 
-| 原图4 | 复现图4 |
+| 原图 | 复现图 |
 |:---:|:---:|
 | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig5.jpg" alt="原图4"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_04.jpg" alt="复现图4"> |
 | **图5 溶解氧与饱和度分析** | **复现图4** |
@@ -132,7 +132,7 @@ setwd("D:/DATA/FinallyWork")
 
 <div align="center">
 
-| 原图5 | 复现图5 |
+| 原图 | 复现图 |
 |:---:|:---:|
 | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig6.jpg" alt="原图5"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_05.jpg" alt="复现图5"> |
 | **图6 局部与全局效应值** | **复现图5** |
