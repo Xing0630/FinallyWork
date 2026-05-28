@@ -86,56 +86,24 @@ setwd("D:/DATA/FinallyWork")
 ## 复现对比图
 
 <div align="center">
+### 复现图1（图2：相关性与回归分析拼图）
+<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_01.jpg" alt="复现图1">
+<br><br>
 
-| 复现图1（图2：相关性与回归分析拼图） |
-|:---:|
-| <img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_01.jpg" alt="复现图1"> |
-| **复现图1** |
+### 复现图2（图3：回归系数与解释方差拼图）
+<img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_02.jpg" alt="复现图2">
+<br><br>
 
-</div>
+### 复现图3（图4：站点与温度效应拼图）
+<img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_03.jpg" alt="复现图3">
+<br><br>
 
-<br>
+### 复现图4（图5：溶解氧与饱和度分析拼图）
+<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_04.jpg" alt="复现图4">
+<br><br>
 
-<div align="center">
-
-| 复现图2（图3：回归系数与解释方差拼图） |
-|:---:|
-| <img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_02.jpg" alt="复现图2"> |
-| **复现图2** |
-
-</div>
-
-<br>
-
-<div align="center">
-
-| 复现图3（图4：站点与温度效应拼图） |
-|:---:|
-| <img width="300" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_03.jpg" alt="复现图3"> |
-| **复现图3** |
-
-</div>
-
-<br>
-
-<div align="center">
-
-| 复现图4（图5：溶解氧与饱和度分析拼图） |
-|:---:|
-| <img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_04.jpg" alt="复现图4"> |
-| **复现图4** |
-
-</div>
-
-<br>
-
-<div align="center">
-
-| 复现图5（图6：局部与全局效应值拼图） |
-|:---:|
-| <img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_05.jpg" alt="复现图5"> |
-| **复现图5** |
-
+### 复现图5（图6：局部与全局效应值拼图）
+<img width="400" src="https://cdn.jsdelivr.net/gh/Swb123-star/FinallyWork@main/SWB_collage_figures/collage_05.jpg" alt="复现图5">
 </div>
 ---
 
