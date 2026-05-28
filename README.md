@@ -84,14 +84,60 @@ setwd("D:/DATA/FinallyWork")
 结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
 
 ## 📊 原图 ↔ 复现图 对照展示
-| 图号与主题 | 论文原文图片 | 本项目 R 语言复现图片 |
-| :---: | :---: | :---: |
-| 图 2 相关性与回归分析 |  |  |[论文原图](https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig2.jpg) |  |
-| 图 3 回归系数与解释方差 |  |  |[论文原图](https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig3.jpg) |  |
-| 图 4 站点与温度效应 | ![论文原图](https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig4.jpg) |  |
-| 图 5 溶解氧与饱和度分析 | ![论文原图](https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig5.jpg) |  |
-| 图 6 局部与全局效应值 |  |  |[论文原图](https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig6.jpg) |  |
+## 复现对比图
 
+<div align="center">
+
+| 原图1 | 复现图1 |
+|:---:|:---:|
+| <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig2.jpg" alt="原图1"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_01.jpg" alt="复现图1"> |
+| **图2 相关性与回归分析** | **复现图1** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| 原图2 | 复现图2 |
+|:---:|:---:|
+| <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig3.jpg" alt="原图2"> | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_02.jpg" alt="复现图2"> |
+| **图3 回归系数与解释方差** | **复现图2** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| 原图3 | 复现图3 |
+|:---:|:---:|
+| <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig4.jpg" alt="原图3"> | <img width="300" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_03.jpg" alt="复现图3"> |
+| **图4 站点与温度效应** | **复现图3** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| 原图4 | 复现图4 |
+|:---:|:---:|
+| <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig5.jpg" alt="原图4"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_04.jpg" alt="复现图4"> |
+| **图5 溶解氧与饱和度分析** | **复现图4** |
+
+</div>
+
+<br>
+
+<div align="center">
+
+| 原图5 | 复现图5 |
+|:---:|:---:|
+| <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/original_figures/fig6.jpg" alt="原图5"> | <img width="400" src="https://raw.githubusercontent.com/Swb123-star/FinallyWork/main/SWB_collage_figures/collage_05.jpg" alt="复现图5"> |
+| **图6 局部与全局效应值** | **复现图5** |
+
+</div>
 ---
 
 ## 📦 项目依赖包说明
