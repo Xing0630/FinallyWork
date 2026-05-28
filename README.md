@@ -87,10 +87,10 @@ setwd("D:/DATA/FinallyWork")
 
 | 图号与主题 | 论文原文图片 | 本项目 R 语言复现图片 |
 | :---: | :---: | :---: |
-| 图 2 相关性与回归分析 | ![论文原图](original_figures/fig2.jpg) | ![R复现图](SWB_collage_figures/collage_01.jpg) |
-| 图 3 回归系数与解释方差 | ![论文原图](original_figures/fig3.jpg) | ![R复现图](SWB_collage_figures/collage_02.jpg) |
-| 图 4 站点与温度效应 | ![论文原图](original_figures/fig4.jpg) | ![R复现图](SWB_collage_figures/collage_03.jpg) |
-| 图 5 溶解氧与饱和度分析 | ![论文原图](original_figures/fig5.jpg) | ![R复现图](SWB_collage_figures/collage_04.jpg) |
+| 图 2 相关性与回归分析 |![论文原图](original_figures/fig2.jpg) |![R复现图](SWB_collage_figures/collage_01.jpg) |
+| 图 3 回归系数与解释方差 |![论文原图](original_figures/fig3.jpg) |![R复现图](SWB_collage_figures/collage_02.jpg) |
+| 图 4 站点与温度效应 |![论文原图](original_figures/fig4.jpg) | ![R复现图](SWB_collage_figures/collage_03.jpg) |
+| 图 5 溶解氧与饱和度分析 |![论文原图](original_figures/fig5.jpg) | ![R复现图](SWB_collage_figures/collage_04.jpg) |
 | 图 6 局部与全局效应值 | ![论文原图](original_figures/fig6.jpg) | ![R复现图](SWB_collage_figures/collage_05.jpg) |
 
 ---
