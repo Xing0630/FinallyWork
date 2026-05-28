@@ -40,27 +40,22 @@
 ## 📂 整体文件结构
 ```plaintext
 FinallyWork/
-├─ SWB_collage_figures/      # 本人R语言复现成果（5张最终拼图图表）
-│  ├─ collage_01.jpg         # Figure2：相关性与回归分析拼图
-│  ├─ collage_02.jpg         # Figure3：回归系数与解释方差拼图
-│  ├─ collage_03.jpg         # Figure4：站点与温度效应拼图
-│  ├─ collage_04.jpg         # Figure5：溶解氧与饱和度堆叠面积图
-│  └─ collage_05.jpg         # Figure6：局部与全局效应值拼图
-├─ scripts/
-│  └─ SWB_r_scripts/         # 全套R语言复现代码
+├─ SWB-collage_figures/      # 本人R语言复现成果（5张最终拼图图表）
+│  ├─ collage_02.jpg         # Figure2：相关性与回归分析拼图
+│  ├─ collage_03.jpg         # Figure3：回归系数与解释方差拼图
+│  ├─ collage_04.jpg         # Figure4：站点与温度效应拼图
+│  ├─ collage_05.jpg         # Figure5：溶解氧与饱和度堆叠面积图
+│  └─ collage_06.jpg         # Figure6：局部与全局效应值拼图
+├─ SWB-r_scripts/              # 全套R语言复现代码
 │     ├─ Figure2.R           # 相关性与回归分析图生成脚本
 │     ├─ Figure3.R           # 回归系数与解释方差图生成脚本
 │     ├─ Figure4.R           # 站点与温度效应分析图生成脚本
 │     ├─ Figure5.R           # 溶解氧与饱和度堆叠面积图生成脚本（模拟数据）
 │     ├─ Figure6.R           # 局部与全局效应值分析图生成脚本
-├─ data/
-│  ├─ original_data/         # 原始数据集（仅作参考）
-│  └─ SWB_data/              # 本项目使用的完整数据集
-├─ output/                   # 自动生成的图表文件存放目录
-├─ reproduced_figures/       # 原作者Python复现8张图表（仅作对比参考）
-├─ original_figures/         # 论文原文图表（用于对照）
-├─ report.qmd                # 自动生成分析报告的R Markdown文档
-└─ README.md                 # 项目说明文档（本文档）
+├─SWB-data/
+│  └─ dat/              # 本项目使用的完整数据集
+├─ SWB-original_figures/         # 论文原文图表（用于对照）
+└─ README-SWB.md                 # 项目说明文档（本文档）
 🛠️ 运行方法
 1. 环境准备
 安装 R 与 RStudio，并安装所需依赖包：
@@ -74,7 +69,7 @@ r
 setwd("D:/DATA/FinallyWork")
 无需修改内部路径，所有代码已适配固定目录结构。
 3. 一键批量运行（推荐）
-打开 scripts/SWB_r_scripts/run_all.R 脚本，点击 RStudio 中的 Source 按钮（或按 Ctrl+Shift+S），所有图表会自动生成到 output/ 文件夹，同时复制到 SWB_collage_figures/ 用于展示。
+打开 scripts/SWB-r_scripts 脚本，点击 RStudio 中的 Source 按钮（或按 Ctrl+Shift+S），所有图表会自动生成到 output/ 文件夹，同时复制到 SWB-collage_figures/ 用于展示。
 4. 单图独立运行
 直接打开对应图表的脚本文件（如 Figure2.R），点击 Source 即可单独生成该图。
 💡 项目优化说明
@@ -82,7 +77,7 @@ setwd("D:/DATA/FinallyWork")
 数据修复：Figure5 采用模拟数据重构，彻底解决原始数据集列名缺失、读取报错问题
 结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
 ## 复现对比图
-在SWB_collage_figures中
+在SWB-collage_figures中
 ---
 ## 📦 项目依赖包说明
 | 包名 | 用途 |
