@@ -13,6 +13,10 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, script_dir)
 from data_utils import load_data
 
+# Set text type
+plt.rcParams['font.family'] = 'Times New Roman'
+plt.rcParams['mathtext.fontset'] = 'stix'
+
 
 def plot_rel_k600_er(dat, output_dir):
     """

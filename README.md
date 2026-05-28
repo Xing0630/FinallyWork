@@ -1,5 +1,4 @@
 
-# 复现论文：Multiple stressors alter greenhouse gas concentrations in streams
 
 这是一个复现论文《Multiple stressors alter greenhouse gas concentrations in streams》（Gutiérrez-Cánovas 等，2024）中所有图表的Python代码库。
 
@@ -59,6 +58,7 @@ python plot_01_rel_k600_ER.py
 
 ## 图表说明
 
+
 <div align="center">
 
 | 原图1 | 复现图1 |
@@ -90,27 +90,6 @@ python plot_01_rel_k600_ER.py
 
 </div>
 
-<br>
-
-<div align="center">
-
-| 原图4 | 复现图4 |
-|:---:|:---:|
-| <img width="400" src="https://github.com/user-attachments/assets/ba6f59e9-5b5c-448e-83e9-89369ca043f4" alt="原图4"> | <img width="400" src="https://github.com/user-attachments/assets/44d2acaa-8ca4-4766-be40-334f61d509a9" alt="复现图4"> |
-| **原图4** | **复现图4** |
-
-</div>
-
-<br>
-
-<div align="center">
-
-| 原图5 | 复现图5 |
-|:---:|:---:|
-| <img width="400" src="https://github.com/user-attachments/assets/5620aad4-0f40-45be-a1e4-cbabef1e38ed" alt="原图5"> | <img width="400" src="https://github.com/user-attachments/assets/3a82858d-92a0-42fe-b785-6b5abac51ebe" alt="复现图5"> |
-| **原图5** | **复现图5** |
-
-</div>
 ## 数据说明
 
 原始数据集包含50个站点的观测数据，主要变量包括：

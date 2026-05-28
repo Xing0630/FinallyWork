@@ -7,11 +7,17 @@ import matplotlib.pyplot as plt
 import os
 import sys
 
+# Set font
+plt.rcParams.update({
+    'font.family': 'Times New Roman',
+    'mathtext.fontset': 'stix',
+    'axes.unicode_minus': False
+})
+
 # Add parent directory to path for importing data_utils
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, script_dir)
 from data_utils import load_data
-
 
 def plot_hist_ghg(dat, output_dir):
     """
