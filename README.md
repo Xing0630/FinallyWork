@@ -84,6 +84,25 @@ setwd("D:/DATA/FinallyWork")
 
 ## 复现对比图
 在SWB_collage_figures中
+## 📊 My Reproduced Results (5 Collage Figures)
+I reorganized the original 8 figures into 5 collage plots using R, based on my own analysis. The figures are stored in `my_collage_figures/`:
+
+<div align="center">
+  <img src="my_collage_figures/collage_01.jpg" width="30%" hspace="10">
+  <img src="my_collage_figures/collage_02.jpg" width="30%" hspace="10">
+  <img src="my_collage_figures/collage_03.jpg" width="30%" hspace="10">
+</div>
+
+<div align="center" style="margin-top: 15px;">
+  <img src="my_collage_figures/collage_04.jpg" width="45%" hspace="10">
+  <img src="my_collage_figures/collage_05.jpg" width="45%" hspace="10">
+</div>
+
+---
+## 🛠️ My Implementation Details
+- **R Scripts**: `scripts/my_r_scripts/` (contains all the R code for generating the collages)
+- **My Data**: `data/my_data/` (the raw data files I used for analysis)
+- **Collage Outputs**: `my_collage_figures/` (the final 5 collage figures)
 ---
 
 ## 📦 项目依赖包说明
