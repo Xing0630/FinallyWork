@@ -1,98 +1,101 @@
-# 论文图表复现项目｜R 语言独立实现
-本项目为独立复现学术论文可视化结果，与原小组仓库作者均为对同一篇论文的复现实现。
 
----
+# 复现论文：Multiple stressors alter greenhouse gas concentrations in streams
 
-## 🔎 复现论文信息
-- **论文题目**：Multiple stressors alter greenhouse gas concentrations in streams  
-- **发表信息**：Gutiérrez-Cánovas 等，2024，*Global Change Biology*
+这是一个复现论文《Multiple stressors alter greenhouse gas concentrations in streams》（Gutiérrez-Cánovas 等，2024）中所有图表的Python代码库。
 
----
+## 引用
 
-## 📌 项目关系与复现对比说明
-同一篇论文，两种独立复现方案，核心结果完全一致：
+Gutiérrez-Cánovas, C., et al. (2024). Multiple stressors alter greenhouse gas concentrations in streams. Global Change Biology.
 
-| 对比维度 | 原小组 Python 实现 | 本项目 R 语言实现 |
-|---------|----------------|---------------|
-| 技术栈 | Python (matplotlib, seaborn) | R (tidyverse, patchwork, cowplot) |
-| 图表输出 | 拆分输出 8 张独立图表 | 优化布局，整合为 5 张拼图式综合图表 |
-| 数据处理 | 依赖原始数据集 | Figure5 采用模拟数据重构，解决列名缺失问题 |
-| 运行方式 | 单图独立运行 | 支持单图运行 + 一键批量生成所有图表 |
-| 核心结果 | 完整还原论文统计分析 | 完整还原论文相关性、回归系数、方差分解等所有结果 |
+## 项目结构
 
-两套代码逻辑、分析思路完全独立，但均通过严格统计验证，确保与论文原文结果一致。
+```
+github-package/
+├── data/
+│   └── dat.txt                    # 原始数据集
+├── original_figures/              # 原始论文图表（请自行添加）
+│   └── README.md
+├── reproduced_figures/            # 复现的图表（运行脚本后生成）
+├── scripts/
+│   ├── data_utils.py              # 数据加载和预处理工具
+│   ├── plot_01_rel_k600_ER.py     # 图1：K600与ER的关系
+│   ├── plot_02_hist_ghg.py        # 图2：代谢和GHG分布直方图
+│   ├── plot_03_rel_ghg.py         # 图3：代谢、DO与GHG通量关系
+│   ├── plot_04_metabolism_coefficients.py  # 图4：代谢多模型推断系数
+│   ├── plot_05_ghg_coefficients.py       # 图5：GHG多模型推断系数
+│   ├── plot_06_variance_partitioning.py   # 图6：方差分解图
+│   ├── plot_07_sem_effects.py              # 图7：SEM效应图
+│   ├── plot_08_scenarios.py                # 图8：场景分析图
+│   └── run_all_figures.py      # 批量运行所有图表生成脚本
+├── requirements.txt               # Python依赖包
+└── README.md                   # 本文件
+```
 
----
+## 快速开始
 
-## 📖 项目简介
-本项目为完整的 R 语言数据分析与可视化复现项目，共生成 5 张核心拼图图表，完整覆盖论文全部分析内容，包括：
-- 变量相关性与回归分析
-- 多元回归系数解析与显著性检验
-- 方差分解与解释力评估
-- 温度梯度效应分析
-- 溶解氧与温室气体 (CO₂/CH₄) 动态变化
-- 局部与全局效应值量化分析
+### 1. 安装依赖
 
-所有代码已优化适配，可一键批量运行，自动输出全部可视化结果，无路径报错、无列名缺失问题。
+```bash
+pip install -r requirements.txt
+```
 
----
+### 2. 运行脚本
 
-## 📂 整体文件结构
-```plaintext
-FinallyWork/
-├─ SWB_collage_figures/      # 本人R语言复现成果（5张最终拼图图表）
-│  ├─ collage_01.jpg         # Figure2：相关性与回归分析拼图
-│  ├─ collage_02.jpg         # Figure3：回归系数与解释方差拼图
-│  ├─ collage_03.jpg         # Figure4：站点与温度效应拼图
-│  ├─ collage_04.jpg         # Figure5：溶解氧与饱和度堆叠面积图
-│  └─ collage_05.jpg         # Figure6：局部与全局效应值拼图
-├─ scripts/
-│  └─ SWB_r_scripts/         # 全套R语言复现代码
-│     ├─ Figure2.R           # 相关性与回归分析图生成脚本
-│     ├─ Figure3.R           # 回归系数与解释方差图生成脚本
-│     ├─ Figure4.R           # 站点与温度效应分析图生成脚本
-│     ├─ Figure5.R           # 溶解氧与饱和度堆叠面积图生成脚本（模拟数据）
-│     ├─ Figure6.R           # 局部与全局效应值分析图生成脚本
-├─ data/
-│  ├─ original_data/         # 原始数据集（仅作参考）
-│  └─ SWB_data/              # 本项目使用的完整数据集
-├─ output/                   # 自动生成的图表文件存放目录
-├─ reproduced_figures/       # 原作者Python复现8张图表（仅作对比参考）
-├─ original_figures/         # 论文原文图表（用于对照）
-├─ report.qmd                # 自动生成分析报告的R Markdown文档
-└─ README.md                 # 项目说明文档（本文档）
-🛠️ 运行方法
-1. 环境准备
-安装 R 与 RStudio，并安装所需依赖包：
-r
-运行
-install.packages(c("tidyverse", "patchwork", "cowplot"))
-2. 运行配置
-将 RStudio 工作目录设置为项目根目录：
-r
-运行
-setwd("D:/DATA/FinallyWork")
-无需修改内部路径，所有代码已适配固定目录结构。
-3. 一键批量运行（推荐）
-打开 scripts/SWB_r_scripts/run_all.R 脚本，点击 RStudio 中的 Source 按钮（或按 Ctrl+Shift+S），所有图表会自动生成到 output/ 文件夹，同时复制到 SWB_collage_figures/ 用于展示。
-4. 单图独立运行
-直接打开对应图表的脚本文件（如 Figure2.R），点击 Source 即可单独生成该图。
-💡 项目优化说明
-结构优化：将原论文 8 张子图内容，合理整合为 5 张高清拼图，逻辑更集中、展示更清晰
-数据修复：Figure5 采用模拟数据重构，彻底解决原始数据集列名缺失、读取报错问题
-结果一致：可视化趋势、显著性标注、变化规律与论文原图、Python 复现版本完全匹配
-## 复现对比图
-在SWB_collage_figures中
----
-## 📦 项目依赖包说明
-| 包名 | 用途 |
-| :--- | :--- |
-| tidyverse | 数据清洗与可视化（dplyr, ggplot2 等） |
-| patchwork | 多子图拼图、整体排版布局，实现复杂图表组合 |
-| cowplot | 图表主题美化、坐标轴与边框优化，提升学术图表质感 |
-📄 报告生成方式
-打开项目内 report.qmd 文件，在 RStudio 中点击 Knit 按钮（或按 Ctrl+Shift+K），一键生成完整 HTML 分析报告，自动嵌入全部复现图表与分析说明。
-📝 版本信息
-复现版本：v1.0.0（2026-05-27）
-论文版本：Gutiérrez-Cánovas et al., 2024, Global Change Biology
-技术栈：R 4.3.3, tidyverse 2.0.0, patchwork 1.2.0, cowplot 1.1.3
+#### 批量生成所有图表：
+```bash
+cd scripts
+python run_all_figures.py
+```
+
+#### 或单独生成某个图表：
+```bash
+cd scripts
+python plot_01_rel_k600_ER.py
+```
+
+### 3. 查看结果
+
+复现的图表会保存在 `reproduced_figures/` 目录中，格式为JPG。
+
+## 图表说明
+
+### 探索性分析图表
+1. **Figure 1**：K600（气体交换速率）与ER（生态系统呼吸）的关系图
+2. **Figure 2**：代谢率和温室气体浓度的分布直方图
+3. **Figure 3**：代谢率、DO赤字与GHG通量的关系散点图
+
+### 多模型推断图表
+4. **Figure 4**：代谢指标（GPP、ER、NEP、Algal production）的模型系数图
+5. **Figure 5**：温室气体指标（pCO2、pCH4）的模型系数图
+6. **Figure 6**：各变量的方差分解图
+
+### 结构方程模型与场景分析
+7. **Figure 7**：SEM标准化总效应图
+8. **Figure 8**：不同DO赤字水平下的场景分析图
+
+## 数据说明
+
+原始数据集包含50个站点的观测数据，主要变量包括：
+
+- **代谢指标**：GPP（总初级生产力）、ER（生态系统呼吸）、NEP（净生态系统生产力）、Algal production（藻产量）
+- **温室气体**：pCO2、pCH4、FCO2、FCH4
+- **环境因子**：温度、流速、流量、DIN、DO饱和度、NDVI（河岸植被）等
+
+**注意**：部分图（系数图、方差分解图、SEM效应图、场景分析图）是基于原始R代码的模拟结果，未进行完整的模型拟合。
+
+## 与原始代码的关系
+
+本项目是对原始R代码的Python复现：
+- 原始代码仓库：包含完整的R分析脚本
+- 本项目：使用Python和matplotlib复现所有主要图表
+- 数据预处理：在 `data_utils.py` 中实现了DO赤字计算等预处理步骤
+
+## 系统要求
+
+- Python 3.7+
+- 主要依赖：pandas, numpy, matplotlib, scipy
+
+## 技术支持
+
+如有问题，请参阅技术文档或检查 `requirements.txt` 确保依赖正确安装。
+
